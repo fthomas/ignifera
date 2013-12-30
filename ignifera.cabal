@@ -1,0 +1,17 @@
+Name:               ignifera
+Version:            0.0.0
+Synopsis:
+Description:
+Homepage:           https://github.com/fthomas/ignifera
+Bug-Reports:        https://github.com/fthomas/ignifera/issues
+License:            GPL-3
+License-File:       LICENSE
+Author:             Frank S. Thomas <frank@timepit.eu>
+Maintainer:         Frank S. Thomas <frank@timepit.eu>
+Category:           Game
+Build-Type:         Simple
+Cabal-Version:      >= 1.8
+
+Source-Repository head
+  Type:             git
+  Location:         https://github.com/fthomas/ignifera
