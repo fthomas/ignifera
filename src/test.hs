@@ -1,5 +1,5 @@
-backtracking :: (Monad m) => (a -> m a) -> (a -> Bool) -> a -> m a
-backtracking nextCandidates accept firstCandidate = acceptOrTraverse firstCandidate
+backtrack :: (Monad m) => (c -> m c) -> (c -> Bool) -> c -> m c
+backtrack nextCandidates accept firstCandidate = returnOrTraverse firstCandidate
   where
-    traverse c = nextCandidates c >>= acceptOrTraverse
-    acceptOrTraverse c = if accept c then return c else traverse c
+    traverse c = nextCandidates c >>= returnOrTraverse
+    returnOrTraverse c = if accept c then return c else traverse c
