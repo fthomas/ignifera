@@ -13,5 +13,18 @@ Build-Type:         Simple
 Cabal-Version:      >= 1.8
 
 Source-Repository head
-  Type:             git
-  Location:         https://github.com/fthomas/ignifera
+  type:             git
+  location:         https://github.com/fthomas/ignifera
+
+Library
+  hs-Source-dirs:   src
+  exposed-modules:  Color
+                    Piece
+                    PieceType
+  build-depends:    base
+
+Test-Suite test-ignifera
+  type:             exitcode-stdio-1.0
+  hs-source-dirs:   test
+  main-is:          Main.hs
+  build-depends:    base
