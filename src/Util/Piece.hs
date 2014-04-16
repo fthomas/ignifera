@@ -1,4 +1,4 @@
-module Util.PieceUtil where
+module Util.Piece where
 
 import Color
 import Piece

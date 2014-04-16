@@ -22,7 +22,8 @@ Library
                     Color
                     Piece
                     PieceType
-                    Util.PieceUtil
+                    Util.Piece
+                    Util.PieceAbbr
   build-depends:    base
 
 Test-Suite test-ignifera
