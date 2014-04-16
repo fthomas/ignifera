@@ -18,9 +18,11 @@ Source-Repository head
 
 Library
   hs-Source-dirs:   src
-  exposed-modules:  Color
+  exposed-modules:
+                    Color
                     Piece
                     PieceType
+                    Util.PieceUtil
   build-depends:    base
 
 Test-Suite test-ignifera
