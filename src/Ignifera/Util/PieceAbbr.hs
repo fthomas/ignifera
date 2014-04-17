@@ -1,8 +1,8 @@
-module Util.PieceAbbr where
+module Ignifera.Util.PieceAbbr where
 
-import Color
-import Piece
-import PieceType
+import Ignifera.Color
+import Ignifera.Piece
+import Ignifera.PieceType
 
 king   = \c -> Piece c King
 queen  = \c -> Piece c Queen
