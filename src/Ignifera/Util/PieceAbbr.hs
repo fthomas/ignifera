@@ -5,22 +5,22 @@ import Ignifera.Piece
 import Ignifera.PieceType
 
 king :: Color -> Piece
-king = \c -> Piece c King
+king c = Piece c King
 
 queen :: Color -> Piece
-queen = \c -> Piece c Queen
+queen c = Piece c Queen
 
 rook :: Color -> Piece
-rook = \c -> Piece c Rook
+rook c = Piece c Rook
 
 bishop :: Color -> Piece
-bishop = \c -> Piece c Bishop
+bishop c = Piece c Bishop
 
 knight :: Color -> Piece
-knight = \c -> Piece c Knight
+knight c = Piece c Knight
 
 pawn :: Color -> Piece
-pawn = \c -> Piece c Pawn
+pawn c = Piece c Pawn
 
 
 whiteKing :: Piece

@@ -15,21 +15,19 @@ centipawns pieceType = case pieceType of
   Pawn   -> 100
 
 readFigurine :: Char -> Maybe Piece
-readFigurine char = case char of
-  '♔' -> Just whiteKing
-  '♕' -> Just whiteQueen
-  '♖' -> Just whiteRook
-  '♗' -> Just whiteBishop
-  '♘' -> Just whiteKnight
-  '♙' -> Just whitePawn
-  '♚' -> Just blackKing
-  '♛' -> Just blackQueen
-  '♜' -> Just blackRook
-  '♝' -> Just blackBishop
-  '♞' -> Just blackKnight
-  '♟' -> Just blackPawn
-  _   -> Nothing
-
+readFigurine char = lookup char
+  [ ('♔', whiteKing  )
+  , ('♕', whiteQueen )
+  , ('♖', whiteRook  )
+  , ('♗', whiteBishop)
+  , ('♘', whiteKnight)
+  , ('♙', whitePawn  )
+  , ('♚', blackKing  )
+  , ('♛', blackQueen )
+  , ('♜', blackRook  )
+  , ('♝', blackBishop)
+  , ('♞', blackKnight)
+  , ('♟', blackPawn  ) ]
 
 showFigurine :: Piece -> Char
 showFigurine piece = case piece of

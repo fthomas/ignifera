@@ -1,7 +1,9 @@
+.dist-buildwrapper/
 dist
 cabal-dev
 *.o
 *.hi
 *.chi
 *.chs.h
+.project
 .virthualenv
