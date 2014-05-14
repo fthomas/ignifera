@@ -1,9 +1,9 @@
 module Ignifera.Color where
 
-data Color = White | Black
-  deriving (Eq, Read, Show)
+import Ignifera.Util
 
-instance Ord Color where
-  compare White Black = GT
-  compare Black White = LT
-  compare _     _     = EQ
+data Color = Black | White
+  deriving (Bounded, Enum, Eq, Ord, Read, Show)
+
+allColors :: [Color]
+allColors = allValues
