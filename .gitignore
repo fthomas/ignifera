@@ -1,3 +1,4 @@
+.cabal-sandbox/
 .dist-buildwrapper/
 dist
 cabal-dev
@@ -7,3 +8,4 @@ cabal-dev
 *.chs.h
 .project
 .virthualenv
+cabal.sandbox.config
