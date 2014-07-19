@@ -31,9 +31,10 @@ library
                     Ignifera.PieceType,
                     Ignifera.Side,
                     Ignifera.Square,
+                    Ignifera.Format.Pgn,
+                    Ignifera.Format.PgnParser,
                     Ignifera.Util,
                     Ignifera.Util.GameResult,
-                    Ignifera.Util.PgnParser,
                     Ignifera.Util.Piece,
                     Ignifera.Util.PieceAbbr
 
