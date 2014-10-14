@@ -2,10 +2,9 @@ module-template: ! 'module MODULE_NAME where
 
 '
 extensions: {}
-environment: null
+environment: default
 cabal-file: project.cabal
-modules:
-  Main(Game/Ignifera/Color.hs):
-    filename: Game/Ignifera/Color.hs
 version: 1
 ghc-args: []
+excluded-modules:
+- Setup.hs
