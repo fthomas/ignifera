@@ -36,7 +36,8 @@ library
                     Ignifera.Util,
                     Ignifera.Util.GameResult,
                     Ignifera.Util.Piece,
-                    Ignifera.Util.PieceAbbr
+                    Ignifera.Util.PieceAbbr,
+                    Ignifera.Rules
 
 test-suite test-ignifera
   type:             exitcode-stdio-1.0
